@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col0sm-12 col-md-8 lg-6 mx-auto">
+`       <form class="form-inline my-4">
+     <div class="input-group">
+        <span class="input-group-text">Search Pokemon</span>
+        <input type="text" class="form-control" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}">
+    </div>
+</form>
+        </div>
+    </div>
+    <div class="row">
+        <ng-container *ngFor="let item of result | filter:searchText">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{{item.imageUrl}}" alt="card image cap">
+                        <h3>{{item.name}}</h3>
+                    </div>
+                </div>
+            </div>
+
+        </ng-container>
+        
+    </div>
+</div>
