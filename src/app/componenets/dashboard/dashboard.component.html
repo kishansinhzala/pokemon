@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm"  *ngFor="let item of dashBoradData, let i=index">
+
+      <div class="card" style="width: 18rem;" >
+        <img src="{{item.img}}" class="card-img-top" alt="...">
+
+        <div class="card-body">
+        <span><strong> Name: </strong></span><span>{{item.title}}</span><br>
+        <strong> Price: </strong>{{item.price|currency:'INR'}} <br>
+
+        <button class="btn btn-primary mt-2" (click)="onAddCart(i)" >Add to Cart</button>
+        <hr>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</div>

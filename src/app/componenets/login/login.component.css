@@ -1,0 +1,100 @@
+span{
+  font-size: 20px;
+}
+a{
+  color: blue;
+  font-size: 27px;
+  font-weight: 600;
+}
+.btn{
+  font-size: 20px;
+}
+label{
+  font-size:20px;
+  font-weight: 600;
+}
+h2{
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // console.log('...........', userData);
+// const isExist = userData.find(
+//   (user: any) =>
+//     user.email === this.loginForm.value.email &&
+//     user.password === this.loginForm.value.password
+// );
+// if (isExist) {
+//   this.router.navigate(['product']);
+//   this.authService.loggedInData.next(isExist)
+//   localStorage.setItem('saveData',JSON.stringify(isExist))
+// } else {
+//   alert('invalid detail !');
+// } */

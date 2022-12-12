@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm"  *ngFor="let item of cart">
+
+      <div class="card" style="width: 18rem;" >
+        <img src="{{item.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+
+        <span><strong> Name: </strong></span><span>{{item.title}}</span><br>
+        <span><strong> Description: </strong></span><span>{{item.desciption}}</span><br>
+        <span><strong> qty: </strong></span><span>{{item.qty}}</span><br>
+        <strong> Price: </strong>{{item.price|currency:'INR'}} <br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-5 ">
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <h2>Total Price : {{totalPrice|currency:'INR'}}</h2>
+    <h2>Total Quantity : {{totalqty}}</h2>
+    <button class="btn btn-success"(click)="onPlaceOrder()" >Place Order</button>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    </div>
+  </div>
+</div>
+

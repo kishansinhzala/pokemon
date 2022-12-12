@@ -1,24 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HttpClientModule} from '@angular/common/http'
-import { DashboardComponent } from './Pages/Components/dashboard/dashboard.component';
-import { FilterPipe } from './filter.pipe';
-import { FormsModule } from '@angular/forms';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SignUpComponent } from './componenets/sign-up/sign-up.component';
+import { LoginComponent } from './componenets/login/login.component';
+import { DashboardComponent } from './componenets/dashboard/dashboard.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './componenets/header/header.component';
+import { CartComponent } from './componenets/cart/cart.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    SignUpComponent,
+    LoginComponent,
     DashboardComponent,
-    FilterPipe
+    HeaderComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    Ng2SearchPipeModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
